@@ -7,7 +7,7 @@
       <div class="carousel-caption d-none  d-md-block ">
         <p>{{p1}}</p>
         <h1>{{h1}}</h1>
-        <button class="btn btn-warning" routerLink="portfolio/"> {{b1}}</button>
+        <button class="btn btn-warning" (click)="port()"> {{b1}}</button>
       </div>
     </div>
 
@@ -66,8 +66,24 @@
   <!-- featured work -->
   <app-futurework></app-futurework>
 
-  <!-- What we offer -->
-  <app-aboutus></app-aboutus>
-
-
-</body>
+  <!-- Who we Are -->
+ <div class="mahi-1">
+  <nav class="d-flex justify-content-center py-5">
+    <h2>WHO WE ARE</h2>
+    </nav>
+    
+    
+    <br>
+    <p class="container" style="width: 50rem;">The Constrotech Group has been at the forefront of your city.
+       Real Estate Scenario since more than two decades. The brand stands amongst the most admired real 
+       estate brands in your city.
+       The Constrotech Group has been shaping lifestyles with specific focus on design and innovation.</p>
+<br><br><br>
+<div class="d-flex justify-content-center">
+       <button class="btn btn-warning" routerLink="home/aboutUs">Read More</button>
+       
+      </div>
+      <br><br>
+    </div>
+  <!-- Registration-->
+  </body>

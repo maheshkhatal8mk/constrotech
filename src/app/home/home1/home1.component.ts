@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-home1',
@@ -19,14 +20,14 @@ public h3:any="Educational";
 public h4:any="Residential";
 public h5:any="Industrial";
 public   :any="";
-  constructor(private route:Router) { }
+  constructor(private route:Router, ) { }
 
   ngOnInit(): void {
   }
 
+  port(){
+    this.route.navigateByUrl('portFolio')
+  }
 
-// onportFolio(){
-//   console.log('portfolio is working');
-//   this.route.navigate(['home/ourServices']);
-// }
+
 }

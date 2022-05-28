@@ -1,20 +1,20 @@
-<p>contact works!</p>
-
-<div class="container">
-    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+<h3 CLASS='d-flex justify-content-center text-success'>POST QUERIES HERE</h3>
+<div >
+<div class="container d-flex justify-content-center" >
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()" style="width:50rem;">
         
         <div class="form-group">
             <label >First Name:</label>
             <input type="text" class="form-control" formControlName="fname" required [ngClass]="{'is-invalid':isSubmitted && f.fname.errors}">
 
-            <div *ngIf="isSubmitted && f.fname.errors?.required" class="invalid-feedback">F Name is required</div>
+            <div *ngIf="isSubmitted && f.fname.errors?.required" class="invalid-feedback">First Name is required</div>
         </div>
 
         <div class="form-group">
             <label >Last Name:</label>
             <input type="text" class="form-control" formControlName="lname" required [ngClass]="{'is-invalid':isSubmitted && f.lname.errors}">
 
-            <div *ngIf="isSubmitted && f.name.errors?.required" class="invalid-feedback">Last name is required</div>
+            <div *ngIf="isSubmitted && f.lname.errors?.required" class="invalid-feedback">Last name is required</div>
         </div>
 
         <div class="form-group">
@@ -33,12 +33,13 @@
 
         <div class="form-group">
             <label >Query:</label>
-            <input type="text" class="form-control" formControlName="age" required [ngClass]="{'is-invalid':isSubmitted && f.query.errors}">
+            <input type="text" class="form-control" formControlName="query" required [ngClass]="{'is-invalid':isSubmitted && f.query.errors}">
 
             <div *ngIf="isSubmitted && f.query.errors?.required" class="invalid-feedback">Query is required</div>
         </div>
          <button class="btn btn-warning">Submit</button>
     </form>
+</div>
 </div>
 
         

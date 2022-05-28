@@ -12,16 +12,17 @@ public myForm:any;
 public isSubmitted:boolean=false;
 
 
+
   constructor(private ser:DataService, private fb:FormBuilder, ) { }
 
   ngOnInit(): void {
-    this.myForm=this.fb.group([
-      {name:['',[Validators.required]]},
-      {fname:['',[Validators.required]]},
-      {email:['',[Validators.required]]},
-      {phone:['',[Validators.required]]},
-      {query:['',[Validators.required]]} 
-])
+    this.myForm=this.fb.group({
+      fname:['',[Validators.required]],
+      lname:['',[Validators.required]],
+      email:['',[Validators.required]],
+      phone:['',[Validators.required]],
+      query:['',[Validators.required]] 
+    })
   }
   onSubmit(){
     console.log(this.myForm.value);
