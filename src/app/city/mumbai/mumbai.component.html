@@ -1,0 +1,19 @@
+
+<div class="bg-dark">
+    <div class="container " style="margin-left:22rem ;">
+    <div class="card border-0 " style="width: 50rem;" *ngFor="let dt of data">
+        <img [src]="dt.URL" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{dt.compName}}</h5>
+          <p class="card-text">{{dt.compInfo}}</p>
+          <a [href]="dt.compLink"  class="btn btn-success" >Enquire Now</a>
+        </div>
+        <br><br>
+        
+      </div>
+    </div>
+
+
+
+    
+        

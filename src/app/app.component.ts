@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'constrotech';
-  public cities:any=['pune','raigad','mumbai','solapur'];
+  public cities:any=['pune','bangalore','mumbai','nashik'];
  
 
 

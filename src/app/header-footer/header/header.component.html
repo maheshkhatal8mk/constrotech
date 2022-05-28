@@ -2,11 +2,11 @@
   <div class="container col-md-12">
     <div class="col-md-6">
       <ul class="nav">
-        <li class="px-2"><a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a></li>
-        <li class="px-2"><a href="https://www.facebook.com/login"> <i class="fa-brands fa-facebook"></i> </a></li>
-        <li class="px-2"><a href="https://accounts.google.co.in"><i class="fa-brands fa-google-plus-g"></i></a></li>
-        <li class="px-2"><a href="https://in.pinterest.com/login/"> <i class="fa-brands fa-pinterest"></i> </a></li>
-        <li class="px-2"><a href="https://github.com/"> <i class="fa-brands fa-github"></i> </a></li>
+        <li class="px-2"><a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter text-white"></i></a></li>
+        <li class="px-2"><a href="https://www.facebook.com/login"> <i class="fa-brands fa-facebook text-white"></i> </a></li>
+        <li class="px-2"><a href="https://accounts.google.co.in"><i class="fa-brands fa-google-plus-g text-white"></i></a></li>
+        <li class="px-2"><a href="https://in.pinterest.com/login/"> <i class="fa-brands fa-pinterest text-white"></i> </a></li>
+        <li class="px-2"><a href="https://github.com/"> <i class="fa-brands fa-github text-white"></i> </a></li>
       </ul>
 
     </div>
@@ -16,6 +16,8 @@
         <li class="px-2"> <i class="fa-solid fa-phone"></i> <a> {{no}} </a></li>
         <li class="px-2"> <i class="fa-regular fa-envelope"></i> <a> {{mail}} </a></li>
         <li class="px-2"> <i class="fa-regular fa-clock"></i> <a> {{timetable}} </a></li>
+        <li><button class="btn btn-secondary" routerLink="home/logIn">Log In</button></li>
+        
       </ul>
     </div>
   </div>
@@ -40,6 +42,7 @@
             <li><a class="dropdown-item" routerLink="home/aboutUs">ABOUT US</a></li>
             <li><a class="dropdown-item" routerLink="home/facilities">FACILITIES</a></li>
             <li><a class="dropdown-item" routerLink="home/futureWork">FUTURE WORK</a></li>
+            
           </ul>
         </div>
 
@@ -49,10 +52,10 @@
             Portfolio
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" routerLink="portfolio/commercial">COMMERCIAL</a></li>
-            <li><a class="dropdown-item" routerLink="portfolio/educational">EDUCATIONAL</a></li>
-            <li><a class="dropdown-item" routerLink="portfolio/industrial">INDUSTRIAL</a></li>
-            <li><a class="dropdown-item" routerLink="portfolio/residential">RESIDENTIAL</a></li>
+            <li><a class="dropdown-item" routerLink="portFolio/commercial">COMMERCIAL</a></li>
+            <li><a class="dropdown-item" routerLink="portFolio/educational">EDUCATIONAL</a></li>
+            <li><a class="dropdown-item" routerLink="portFolio/industrial">INDUSTRIAL</a></li>
+            <li><a class="dropdown-item" routerLink="portFolio/residential">RESIDENTIAL</a></li>
           </ul>
         </div>
 
@@ -78,6 +81,18 @@
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             <li><a class="dropdown-item" routerLink="cities/pune">PUNE</a></li>
             <li><a class="dropdown-item" routerLink="cities/mumbai">MUMBAI</a></li>
+            <li><a class="dropdown-item" routerLink="cities/bangalore">BANGALORE</a></li>
+            <li><a class="dropdown-item" routerLink="cities/nashik">NASHIK</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Contact
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" routerLink="contactUs/contact">Query</a></li>
           </ul>
         </div>
 
